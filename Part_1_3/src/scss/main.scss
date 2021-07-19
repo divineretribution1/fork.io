@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import './reset';
+@import './variables.scss';
+body{
+  font-family:'Montserrat', sans-serif;
+
+}
+
+// section 1
+.container{
+ 
+  height: 718px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  }
+  
+  .header{
+  
+    height: 103px;
+    background: #27262A;;
+    @media (min-width: 1200px){
+      background: none;
+    }
+  }
+  
+  .header__elements{
+    justify-content: space-between;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 34px;
+  
+  }
+  
+  .header__text{
+  padding-top: 11px;
+  text-align: center;
+  }
+  
+  .header__button{
+    
+    color: white;
+    width: 119px;
+    @media (min-width: 481px){
+      width: 145px;
+    }
+    height: 37px;
+    border-radius: 40px;
+    background: #8D81AC;
+    font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 15px;
+  }
+  .header__burger{
+    height: 24px;
+    width: 24px;
+    background-color:  #27262A;;
+    display: block;
+    position: relative;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #fff;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: 12px;
+      transition: all 0.3s ease 0s;
+  
+  }
+  .header__burger:before,
+    .header__burger:after{
+      content: '';
+      background-color: #fff;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+    }
+    .header__burger:before{
+      top: 0;
+    }
+    .header__burger:after{
+      bottom: 0;
+    }
+  
+    .header__burger.active span{
+      transform: scale(0);
+    }
+    .header__burger.active:before{
+      transform:rotate(45deg);
+      top: 11px;
+    }
+    .header__burger.active:after{
+      transform:rotate(-45deg);
+      bottom: 11px;
+    }
+  
+  
+    .header__menu.active{
+      position: absolute;
+       display:block;
+       margin-top: 28px;
+       z-index: 100;
+   
+    }
+  
+    .header__list {
+      background: #333333;
+      width: 292px;
+      height: 352px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+     line-height: 26px;
+     margin-left: 13px;
+    
+    }
+    .header__link{
+      padding-top: 45px;
+      padding-left: 34px;
+      padding-right: 34px;
+      color:  #FFFFFF;
+    }
+    .header__link:hover{
+      border-left: 4px solid #8D81AC;
+      color: #8D81AC;
+  
+    }
+   .header__span{
+     color: #8D81AC;
+     text-transform: uppercase;
+     font-size: 24px;
+  line-height: 16px;
+  margin-top: 15px;
+  margin-left: 5px;
+  @media (max-width: 400px){
+    display: none;
+  }
+   }
+  .header__menu{
+    display: none;
+    @media (min-width:940px){
+      width: fit-content;
+      position: absolute;
+      top: 25px;
+  right: 250px;
+    }
+    @media (min-width: 540px){
+    
+        display: block;
+       
+    }
+  
+  }
+  .bacground__picture{
+    height:615px;
+    background-image: url(../img/pictureone.png);
+    @media (min-width: 770px){
+      background-image: url(/src/img/picturetwopng.png);
+    }
+    @media (min-width: 481px) and (max-width: 769px){
+     
+        margin-top: 20px;
+        width: auto;
+        height:672px;
+        background-image: url(../img/imgfff2.png);
+  
+  
+    }
+  }
+  .header__info{
+  color:#FFFFFF ;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  
+  text-align: center;
+   padding-top: 50px;
+  
+  }
+  .header__info__first{
+    max-width: 300px;
+    color: #8D81AC;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+   padding-top: 19px;
+    @media (min-width: 768px){
+      max-width: 600px;
+    }
+  }
+  .header__info__second{
+  color: #848E97;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  padding-top: 14px;
+  }
+  .button__down{
+    display: flex;
+    width: 290px;
+    height: 45px;
+  background: #8D81AC;
+  border-radius: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 400px;
+  @media (min-width:481px){
+    margin-top: 450px;
+  }
+  @media (min-width:770px){
+    margin-top: 420px;
+  }
+  }
+  .batton__down__link{
+    align-content: center;
+    align-items: center;
+    font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding-left: 35px;
+  margin-top: 10px;
+  
+  }
+  
+    .wrap{
+      position: relative;
+    }
+
+    // Section 4
+.section__wraper{
+  background-image: url(../img/bgfour.jpg);
+background-size: cover;
+padding-bottom: 10px;
+@media (max-width:770px){
+  height: 1631px;
+}
+margin-left: auto;
+margin-right: auto;
+
+
+}
+.section__text{
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  padding-top: 57px;
+  color: #FFFFFF;
+  text-align: center;
+  @media (min-width: 768px){
+ height: 41px;
+   line-height: 44px;
+   font-size: 42px;
+  }
+
+}
+.logo__wraper{
+  @media (min-width:768px){
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+  }
+  @media (min-width: 1200px){
+    grid-template-columns: repeat(3,2fr);
+  }
+}
+.logo__blok{
+  margin-top: 53px;
+  text-align: center;
+}
+.logo__blok:nth-of-type(4){
+  @media (min-width:768px) and (max-width:1199px){
+    margin-top: 90px;
+  }
+}
+.smashing__text{
+font-family: Lato;
+font-style: italic;
+font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+ color:  #FFFFFF;
+ padding-top: 19px;
+}
+.section_button_text{
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 34px;
+  margin-right: 34px;
+
+  color: #A291A5;
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;}
+
+
+@import './mixin.scss';
