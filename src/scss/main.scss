@@ -165,7 +165,7 @@ right: 250px;
   height:615px;
   background-image: url('../img/pictureone.png');
   @media (min-width: 770px){
-    background-image: url('/src/img/picturetwopng.png');
+    background-image: url('../img/picturetwopng.png');
   }
   @media (min-width: 481px) and (max-width: 769px){
    
@@ -558,7 +558,7 @@ grid-area: a;
 }}
 .sub{
   padding-top: 83px;
-background-image: url('/src/img/Layer2.png');
+background-image: url('../img/Layer2.png');
 background-size: cover;
 background-position: top -250px left 10px;
   padding-bottom: 97px;
