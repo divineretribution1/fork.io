@@ -163,16 +163,16 @@ right: 250px;
 }
 .bacground__picture{
   height:615px;
-  background-image: url(../img/pictureone.png);
+  background-image: url("../img/pictureone.png");
   @media (min-width: 770px){
-    background-image: url(/src/img/picturetwopng.png);
+    background-image: url("/src/img/picturetwopng.png");
   }
   @media (min-width: 481px) and (max-width: 769px){
    
       margin-top: 20px;
       width: auto;
       height:672px;
-      background-image: url(../img/imgfff2.png);
+      background-image: url("../img/imgfff2.png");
 
 
   }
@@ -251,7 +251,7 @@ margin-top: 10px;
 
 // Section 4
 .section__wraper{
-  background-image: url(../img/bgfour.jpg);
+  background-image: url("../img/bgfour.jpg");
 background-size: cover;
 padding-bottom: 10px;
 @media (max-width:770px){
@@ -558,7 +558,7 @@ grid-area: a;
 }}
 .sub{
   padding-top: 83px;
-background-image: url(/src/img/Layer2.png);
+background-image: url("/src/img/Layer2.png");
 background-size: cover;
 background-position: top -250px left 10px;
   padding-bottom: 97px;
